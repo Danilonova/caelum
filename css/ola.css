@@ -2,3 +2,87 @@
 background-color: #2383c5;
 color: #fff;
 }
+  .a {
+    border-radius: 15px;
+  }
+
+  /* borda superior esquerda e inferior direita com 5px
+  borda superior direita e inferior esquerda com 20px */
+  .b {
+    border-radius: 5px 20px;
+  }
+
+  /* borda superior esquerda com 5px
+  borda superior direita e inferior esquerda com 20px
+  borda inferior direita com 50px */
+  .c {
+    border-radius: 5px 20px 50px;
+  }
+
+  /* borda superior esquerda com 5px
+  borda superior direita com 20px
+  borda inferior direita com 50px
+  borda inferior esquerda com 100px */
+  .d {
+    border-radius: 5px 20px 50px 100px;
+  }
+  .tudo {
+   width: 150px;
+   height: 150px;
+  	background-color: red;
+  }
+  #z {
+    text-shadow: 10px 10px red;
+  }
+
+#x {
+    text-shadow: 10px 10px 5px red;
+  }
+ #w {
+    text-shadow: 10px 10px 5px red, -5px -5px 4px red;
+  }
+.novo{
+ 
+ box-shadow: 20px 20px black;
+
+}
+#vai{
+	width: 200px;
+	height: 200px;
+	border:1px #000 solid;
+	background: repeating-radial-gradient(circle, #f00 0%, #ff0 20%);
+}}
+.padra{
+width: 200px;
+height: 200px;
+
+}
+.linear {
+    background: linear-gradient(white, blue);
+  }
+
+  .radial {
+    background: radial-gradient(white, blue);
+  }
+  .gradiente {
+    background: linear-gradient(45deg, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+  }
+  .linears {
+    background: linear-gradient(to bottom, white, blue);
+  }
+  .lineara {
+    background: -webkit-linear-gradient(top, white, blue);
+    background: -moz-linear-gradient(top, white, blue);
+    background: -o-linear-gradient(top, white, blue);
+  }
+  .linearss {
+    background: -webkit-gradient(linear, left top, left bottom,
+      color-stop(0%, white), color-stop(100%, blue));
+  }
+  h2 {
+    font-size: 100pt;
+    background: linear-gradiente(90deg, #f00, #ff0);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+
+  }
