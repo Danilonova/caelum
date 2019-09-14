@@ -102,12 +102,27 @@
              <dd>42</dd>
 
              <dt>Preço</dt>
-             <dd>R$ 48,95</dd>
+             <dd id="preco">R$ 48,95</dd>
          </dl>
 
 
      </div><!-- fim .card-body -->
  </div><!-- fim .card -->
+ <div class="card mb-3">
+ <div class="card-body">
+
+   <div class="form-group">
+     <label for="qtd">Quantidade:</label>
+     <input type="number" id="qtd" min="1" max="999" value="1" class="form-control">
+   </div>
+
+   <div class="form-group">
+     <label for="total">Total:</label>
+     <output for="qtd preco" id="total" class="form-control">R$ 48,95</output>
+   </div>
+
+ </div>
+</div>
 </div>         
  <form>
      <fieldset>
@@ -125,7 +140,7 @@
 
          <div class="form-group">
              <label for="cpf">CPF</label>
-             <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite seu cpf.. ex: 000.000.000-00">
+             <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite seu cpf.. ex: 000.000.000-00" data-mask="999.999.999-99">
          </div>
 
          <div class="form-group custom-control custom-checkbox">
@@ -143,7 +158,7 @@
 
      <div class="form-group">
          <label for="numero-cartao">Número - CVV</label>
-         <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+         <input type="text" class="form-control" id="numero-cartao" name="numero-cartao" data-mask="9999 9999 9999 9999 - 999">
      </div>
 
      <div class="form-group">
@@ -181,5 +196,8 @@
  </form>
  <script type="text/javascript" src="js/jquery.js"></script>
  <script type="text/javascript" src="js/bootstrap.js"></script>
+ <script type="text/javascript" src="js/total.js"></script>
+ <script type="text/javascript" src="js/inputmask-plugin.js"></script>
+ <script type="text/javascript" src="js/jquery.mask.min"></script>
      </body>
  </html>
